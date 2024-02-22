@@ -28,8 +28,9 @@ class SendCodeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_send_code)
         binding = ActivitySendCodeBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
         auth = FirebaseAuth.getInstance()
 
 
@@ -42,26 +43,26 @@ class SendCodeActivity : AppCompatActivity() {
 
         }
 
-    }
+        binding.buttonJoinUs.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
 
-    fun buttonJoinUs(view: View){
-        startActivity(Intent(this,HomeActivity::class.java))
+            val typedOTP = binding.editTextVerificate.text.toString()
 
-        val typedOTP = binding.editTextVerificate.text.toString()
+            if (typedOTP.isNotEmpty()) {
+                if (typedOTP.length == 6) {
+                    val credential: PhoneAuthCredential = PhoneAuthProvider.getCredential(
+                        OTP, typedOTP
+                    )
+                    signInWithPhoneAuthCredential(credential)
 
-        if (typedOTP.isNotEmpty()) {
-            if (typedOTP.length == 6) {
-                val credential: PhoneAuthCredential = PhoneAuthProvider.getCredential(
-                    OTP, typedOTP
-                )
-                signInWithPhoneAuthCredential(credential)
+                } else {
+                    Toast.makeText(this, "Please enter correct code", Toast.LENGTH_SHORT).show()
 
+                }
             } else {
-                Toast.makeText(this, "Please enter correct code", Toast.LENGTH_SHORT).show()
-
+                Toast.makeText(this, "Please enter code", Toast.LENGTH_SHORT).show()
             }
-        } else {
-            Toast.makeText(this, "Please enter code", Toast.LENGTH_SHORT).show()
+
         }
 
     }
