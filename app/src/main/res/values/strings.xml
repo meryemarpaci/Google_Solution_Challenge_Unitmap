@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UNITMAP</string>
+    <string name="text_login_welcome">Lets Be Solution!</string>
+    <string name="text_login_name_surname"> Enter name and surname</string>
+    <string name="text_login_phone"> Phone Number</string>
+    <string name="text_login_button">Join Us</string>
+    <string name="text_login_About">About</string>
+    <string name="text_enter_verification">Code</string>
+    <string name="text_send_code">Send Code</string>
+    <string name="text_category_slogan">Be aware of global problems</string>
+    <string name="text_category_solution">You are the SOLUTİON </string>
+
+    <string name="text_accident">You are the SOLUTİON </string>
+    <string name="text_epidemics">You are the SOLUTİON </string>
+    <string name="text_global_problem">You are the SOLUTİON </string>
+    <string name="text_natural_disasters">You are the SOLUTİON </string>
+
+    <string name="text_fragment_home_button_web">EXIT</string>
+    <string name="text_fragment_home_button_solution">You are the SOLUTİON </string>
+    <string name="text_welcome">Welcome Unitmap</string>
+    <string name="text_news">News</string>
+    <string name="text_my_reports">MY REPORTS</string>
+    <string name="text_report_reports">Type your problem</string>
+    <string name="text_report_location">Choose Location</string>
+    <string name="text_report_category">Choose Problem Category</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

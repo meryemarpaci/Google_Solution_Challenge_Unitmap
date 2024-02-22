@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/category"
+        android:orderInCategory="2"
+        android:icon="@drawable/outline_newspaper_24"
+        android:title="Category" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:orderInCategory="0"
+        android:icon="@drawable/vector_home"
+        android:title="Home" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/report"
+        android:orderInCategory="1"
+        android:icon="@drawable/vector_report"
+        android:title="Report" />
+
+</menu>

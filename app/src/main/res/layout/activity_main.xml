@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_beige"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="221dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/googleicon" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="@string/text_login_welcome"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextNameSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="52dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:background="@drawable/edit"
+        android:drawableStart="@drawable/short_text"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:hint="@string/text_login_name_surname"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#6C6363"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:autofillHints=""
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:hint="@string/text_login_phone"
+        android:inputType="number"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#6C6363"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSendCode"
+        app:layout_constraintStart_toStartOf="@+id/editTextNameSurname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameSurname"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSendCode"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/dark_red"
+        android:text="@string/text_send_code"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNameSurname"
+        app:layout_constraintTop_toTopOf="@+id/editTextPhoneNumber" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:elevation="2dp"
+        android:text="@string/text_login_About"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_red"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

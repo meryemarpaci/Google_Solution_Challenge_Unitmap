@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742584125810",
+    "project_id": "unitmap-9e4f8",
+    "storage_bucket": "unitmap-9e4f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742584125810:android:df85b6ea8cafcef3c535eb",
+        "android_client_info": {
+          "package_name": "com.solutionchallenge.unitmap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBICv98xTIcVBAM5pn1BdxG704MnN9HeSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
