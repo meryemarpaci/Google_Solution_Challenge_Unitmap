@@ -8,3 +8,5 @@ Go to -> app > src > main > AndroidManifest.xml and swap .MainActivity and .Home
 
 # How to Run
 Open Android Studio and click "Get project from Version Control" from the menu in the upper right corner. Copy and paste the github link of the project here and click "Clone"
+
+Project Link -> https://github.com/meryemarpaci/Google_Solution_Challenge_Unitmap.git
